@@ -1,0 +1,128 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.2.3">
+  <diagram name="Trang-1" id="o3alyphnC9KtSGxSWXqq">
+    <mxGraphModel dx="1426" dy="789" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="m0fnoy_uvddRx-pms7-p-16" value="5. Invoke&lt;div&gt;Aggregate&lt;/div&gt;&lt;div&gt;method&lt;/div&gt;" style="endArrow=classic;html=1;rounded=0;fontSize=14;exitX=0.547;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;align=center;horizontal=1;verticalAlign=middle;" edge="1" parent="1" source="m0fnoy_uvddRx-pms7-p-12">
+          <mxGeometry x="0.1088" y="45" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="410" as="sourcePoint" />
+            <mxPoint x="495.5" y="520" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m0fnoy_uvddRx-pms7-p-1" value="Read request" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="120" y="80" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m0fnoy_uvddRx-pms7-p-2" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;fontSize=14;entryX=0.158;entryY=-0.05;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" source="m0fnoy_uvddRx-pms7-p-1" parent="1" target="m0fnoy_uvddRx-pms7-p-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="135" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m0fnoy_uvddRx-pms7-p-4" value="Write request" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="520" y="80" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="m0fnoy_uvddRx-pms7-p-5" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;fontSize=14;entryX=0.825;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="m0fnoy_uvddRx-pms7-p-4" target="m0fnoy_uvddRx-pms7-p-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="535" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m0fnoy_uvddRx-pms7-p-6" value="&lt;b&gt;GUI&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=29;fontSize=14;fillColor=light-dark(#ffc801, #281d00);strokeColor=#33001A;" vertex="1" parent="1">
+          <mxGeometry x="40" y="190" width="600" height="65.22" as="geometry" />
+        </mxCell>
+        <mxCell id="m0fnoy_uvddRx-pms7-p-9" value="Query handler&lt;div&gt;using Dapper&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=32;fontSize=14;fontStyle=1;fillColor=light-dark(#7acff4, #ededed);" vertex="1" parent="1">
+          <mxGeometry x="70" y="320" width="140" height="85.22" as="geometry" />
+        </mxCell>
+        <mxCell id="m0fnoy_uvddRx-pms7-p-10" value="1. Query" style="endArrow=classic;html=1;rounded=0;exitX=0.099;exitY=1.004;exitDx=0;exitDy=0;exitPerimeter=0;fontSize=14;" edge="1" parent="1" source="m0fnoy_uvddRx-pms7-p-6">
+          <mxGeometry x="0.0545" y="-50" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="260" as="sourcePoint" />
+            <mxPoint x="100" y="320" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m0fnoy_uvddRx-pms7-p-11" value="4. Result" style="endArrow=classic;html=1;rounded=0;exitX=0.842;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.285;entryY=1.002;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;" edge="1" parent="1">
+          <mxGeometry x="-0.0786" y="-40" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180.38000000000002" y="320.00000000000006" as="sourcePoint" />
+            <mxPoint x="180.00000000000003" y="255.39043999999996" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m0fnoy_uvddRx-pms7-p-12" value="Command handler using DDD and EF" style="rounded=1;whiteSpace=wrap;html=1;arcSize=23;fontSize=14;fontStyle=1;fillColor=light-dark(#7acff4, #ededed);" vertex="1" parent="1">
+          <mxGeometry x="320" y="320" width="320" height="85.22" as="geometry" />
+        </mxCell>
+        <mxCell id="m0fnoy_uvddRx-pms7-p-13" value="Command" style="endArrow=classic;html=1;rounded=0;exitX=0.099;exitY=1.004;exitDx=0;exitDy=0;exitPerimeter=0;fontSize=14;" edge="1" parent="1">
+          <mxGeometry x="0.1088" y="45" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="534.5" y="255.22" as="sourcePoint" />
+            <mxPoint x="535.5" y="319.22" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m0fnoy_uvddRx-pms7-p-14" value="&lt;b&gt;Doma in Logic&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=24;fontSize=14;fillColor=light-dark(#01c000, #ededed);" vertex="1" parent="1">
+          <mxGeometry x="440" y="520" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="m0fnoy_uvddRx-pms7-p-15" value="Repositories" style="rounded=1;whiteSpace=wrap;html=1;arcSize=33;fontSize=14;fontStyle=1;fillColor=light-dark(#81ff81, #ededed);" vertex="1" parent="1">
+          <mxGeometry x="320" y="680" width="320" height="85.22" as="geometry" />
+        </mxCell>
+        <mxCell id="m0fnoy_uvddRx-pms7-p-18" value="6. Save&lt;div&gt;changes&lt;/div&gt;" style="endArrow=classic;html=1;rounded=0;fontSize=14;exitX=0.547;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;align=center;horizontal=1;verticalAlign=middle;entryX=0.908;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="m0fnoy_uvddRx-pms7-p-15">
+          <mxGeometry x="-0.1775" y="60" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="405.22" as="sourcePoint" />
+            <mxPoint x="610.5" y="520.22" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m0fnoy_uvddRx-pms7-p-19" value="1. Get Entities" style="endArrow=classic;html=1;rounded=0;fontSize=14;exitX=0.547;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;align=center;horizontal=1;verticalAlign=middle;entryX=0.094;entryY=0.002;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="m0fnoy_uvddRx-pms7-p-15">
+          <mxGeometry x="0.6708" y="-51" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="405.22" as="sourcePoint" />
+            <mxPoint x="350" y="680" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m0fnoy_uvddRx-pms7-p-20" value="4. Entities" style="endArrow=classic;html=1;rounded=0;fontSize=14;exitX=0.25;exitY=0;exitDx=0;exitDy=0;align=center;horizontal=1;verticalAlign=middle;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="m0fnoy_uvddRx-pms7-p-15" target="m0fnoy_uvddRx-pms7-p-12">
+          <mxGeometry x="0.7061" y="-40" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="490" as="sourcePoint" />
+            <mxPoint x="401" y="794.78" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m0fnoy_uvddRx-pms7-p-21" value="&lt;b&gt;Database&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=33;fontSize=14;fillColor=light-dark(#c0c000, #ededed);" vertex="1" parent="1">
+          <mxGeometry x="60" y="880" width="600" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="m0fnoy_uvddRx-pms7-p-22" value="2. SQL" style="endArrow=classic;html=1;rounded=0;fontSize=14;exitX=0.547;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;align=center;horizontal=1;verticalAlign=middle;entryX=0.069;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="m0fnoy_uvddRx-pms7-p-21">
+          <mxGeometry x="0.8356" y="-41" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100.00000000000003" y="405.22" as="sourcePoint" />
+            <mxPoint x="100.00000000000003" y="680" as="targetPoint" />
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m0fnoy_uvddRx-pms7-p-23" value="3. Result" style="endArrow=classic;html=1;rounded=0;fontSize=14;exitX=0.201;exitY=-0.016;exitDx=0;exitDy=0;align=center;horizontal=1;verticalAlign=middle;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="m0fnoy_uvddRx-pms7-p-21">
+          <mxGeometry x="0.7061" y="-40" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180.00000000000003" y="680.22" as="sourcePoint" />
+            <mxPoint x="180.00000000000003" y="405.22" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m0fnoy_uvddRx-pms7-p-24" value="2. SQL" style="endArrow=classic;html=1;rounded=0;exitX=0.099;exitY=1.004;exitDx=0;exitDy=0;exitPerimeter=0;fontSize=14;entryX=0.486;entryY=-0.022;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="m0fnoy_uvddRx-pms7-p-21">
+          <mxGeometry x="0.0545" y="-50" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="765.2195600000001" as="sourcePoint" />
+            <mxPoint x="351" y="829.2195600000001" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m0fnoy_uvddRx-pms7-p-25" value="3. Result" style="endArrow=classic;html=1;rounded=0;exitX=0.568;exitY=0.004;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.285;entryY=1.002;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;" edge="1" parent="1" source="m0fnoy_uvddRx-pms7-p-21">
+          <mxGeometry x="-0.0786" y="-40" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400.38" y="829.8295600000001" as="sourcePoint" />
+            <mxPoint x="400" y="765.22" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m0fnoy_uvddRx-pms7-p-26" value="7. SQL" style="endArrow=classic;html=1;rounded=0;fontSize=14;entryX=0.921;entryY=-0.016;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.913;exitY=0.992;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="m0fnoy_uvddRx-pms7-p-15" target="m0fnoy_uvddRx-pms7-p-21">
+          <mxGeometry x="-0.0205" y="38" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="770" as="sourcePoint" />
+            <mxPoint x="612" y="791.7804399999999" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
